@@ -1,0 +1,349 @@
+:root{
+    --color1 : #f5f5dc;
+    --color2 : #242324;
+    --color3 : #c6ab80;
+    --color4 : gray;
+}
+
+*{
+    font-size: 16px;
+    font-family: 'PT Serif', serif;
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;    
+}
+
+body::-webkit-scrollbar{
+    width: .25rem;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: var(--color3);
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mainnav{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    z-index: 5;
+
+
+    background: var(--color1);
+}
+.mainnav img{
+    width: 5.5rem;
+}
+
+.mainnav ul{
+    height: 100%;
+}
+ul > li{
+    height: 100%;
+    line-height: 3rem;
+    
+}
+
+a{
+    text-decoration: none;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    transition: background-color .5s ease;
+}
+a:hover{
+    color: inherit;    
+}
+
+.mainnav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mainnav li a:hover{
+    background-color: var(--color3);
+}
+
+
+/*Home Section*/
+.home{
+    background-color: var(--color3);
+}
+.carousel{    
+    overflow: hidden;
+}
+.carousel-item img{
+    width: 100%;
+    height: calc(100dvh - 5rem);
+}
+.carousel-caption{
+    background: #00000067;
+    width: 100%;
+    height: 100%;
+
+    top: 0%;
+    left: 0%;
+    
+}
+.carousel-caption > div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.carousel-caption h5, .carousel-caption p{
+    font-size: 3rem;
+    color: var(--color1);
+}
+
+
+.remarks{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+
+
+.icotxt{
+    text-align: center;
+    padding: 0;
+    padding-bottom: 1rem;
+    margin: 0;
+}
+.icotxt i{
+    font-size: 3rem;
+}
+
+.icotitle{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.icopar{
+    text-align: justify;
+    font-weight: lighter;
+    letter-spacing: .3ch;
+}
+
+/*Bootstrap icon fix*/
+.bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
+    display: block;
+}
+
+
+
+/*Products Section*/
+.titleheader{
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.imageprod{
+    display: grid;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+#products{
+    margin: 1rem 0;
+}
+.productbox{
+    height: 15rem;
+    border-radius: 1rem;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.doorblinds img,.horiblinds img,.vertiblinds img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.imgtitles, .transitions{
+    width: 100%;    
+    background-color: #0000003f;
+    padding: 1rem 0;
+    text-align: center;
+
+        
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+
+    transition: background-color 1.5s ease;
+
+}
+.transitions{
+    height: 0%;
+    padding: 0;
+    transition: height 1s ease;
+}
+
+.imgtitles span{
+    font-size: 1.5rem;
+    color: var(--color1);
+}
+
+
+.productbox:hover .imgtitles{
+    background: transparent;
+    line-height: 13rem;
+}
+
+.productbox:hover .transitions{
+    height: 100%;
+    line-height: 13rem;
+}
+
+
+/*special section*/
+.special{
+    background: var(--color3);
+    display: grid;
+    justify-content: center;
+
+}
+
+
+.specialtxt{
+    padding: 3rem 2rem;
+}
+
+.speciallogo{
+    margin: auto;
+    width: 7rem;
+}
+
+.specialinfo{
+    text-align: justify;
+    line-height: 2.5rem;
+}
+
+
+.followus ul{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: .5rem;
+
+}
+
+.followus li{
+    height: 10rem;
+    padding: 0;
+    border-radius: 2rem;
+    overflow: hidden;
+    position: relative;
+}
+.followus a{
+    color: var(--color1);
+}
+
+.overlayblack{
+    display: none;
+    background-color: #00000077;
+
+    width: 100%;
+    height: 100%;
+    line-height: 10rem;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+}
+.overlayblack i{
+    font-size: 2rem;
+    color: var(--color1);
+}
+
+
+   
+.followus img{
+    width: 100%;
+    height: 100%;    
+}
+
+.followus li:hover .overlayblack{
+    display: block;
+}
+
+
+
+
+
+
+/*Foooter*/
+
+.footer{
+    background-color: var(--color2);
+    display: grid;
+}
+.companything .footerhead, .contactinfo .footerhead {
+    width: 100%;
+    font-weight: bold;
+    padding: 1rem 0;
+}
+.follow .footerhead {
+    width: 100%;
+}
+.follow ul{
+    display: flex;
+    justify-content: center;
+}
+.follow a{
+    padding: 1rem;
+}
+.follow a:hover i{
+    color: var(--color3);    
+}
+.follow i{
+    font-size: 2rem;
+    color: var(--color4); 
+}
+
+
+.footerhead > span{
+    color: var(--color1);
+}
+.contactmsg {
+    line-height: 1.5rem;
+    padding-left: 1rem;
+}
+.shortdescription span{
+    color: var(--color4);    
+    text-align: justify;
+    font-size: .9rem;
+}
+
+
+
+
+
+
+
+
+
+

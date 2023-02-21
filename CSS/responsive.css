@@ -1,0 +1,192 @@
+@media only screen and (max-width:600px){
+    /*Navigation - mainnav*/
+    
+    .mainnav ul{
+        display: none;
+    }
+    .mainnav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+    }
+    .mainnav img{
+        margin-left: 0;
+    }
+    .mainnav .specialbtns{
+        display: block;
+        padding: .5rem;
+        border-radius: .5rem;
+    }
+    .mainnav .specialbtns i{
+        font-size: 1.5rem;
+    }
+    .mainnav .specialbtns:hover{
+        background-color: var(--color3);
+    }
+
+
+    /*Smallnav*/
+    .smallnav{
+        padding-top: 1rem;
+        background-color: var(--color3);
+        width: 10rem;
+        height: 100dvh ;
+        margin-left: -10rem;
+        transition: margin-left 1s ease;
+        
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        
+    }
+
+    .smallnavactive{
+        margin-left: 0rem;
+    }
+    
+
+    .smallmove{
+        left: 10rem;
+    }
+    .mainnav{
+        transition: left 1s ease;
+    }
+    main{
+        margin-top: 5rem;
+    }
+
+    .mainbodycover{
+        display: none;
+        background: #00000067;
+        height: calc(100dvh - 5rem);
+        width: 100%;
+        position: fixed;
+        top: 5rem;
+        z-index: 5;
+    }
+
+    .smallnav img{
+        width: 100%;
+    }
+    .smallnav li:hover{
+        background-color: var(--color1);
+    }
+
+
+    /*Home Section*/
+    .remarks{
+        padding: 2rem ;
+    }
+    .icotxt {
+        margin-bottom: 2rem;
+    }
+
+
+    /*Products Section*/
+    #products{
+        margin: 0;
+        padding: 0 1rem;
+    }
+    .productbox{
+        margin-bottom: 2rem;
+    }
+
+    /*Special Section*/
+    .followus{
+        display: none;
+    } 
+    
+    /*Foooter Section*/
+    .footer{
+        padding: 1rem;
+    }
+    .follow .footerhead {
+        text-align: start;
+        font-weight: bold;
+        padding: 1rem 0;
+    }
+    .follow li{
+        padding: 0;
+    }
+
+}
+
+
+@media only screen and (min-width:600px){
+
+
+    /*Navigation - mainnav*/
+    .mainnav img{
+        margin-left: 2rem;
+    }
+    .mainnav .specialbtns{
+        display: none;
+    }
+    a{
+        text-decoration: none;
+        padding: 1rem;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    /*Main section*/
+    .mainbodycover{
+        display: none;
+    }
+    .mainbody{
+        margin-top: 5rem;
+    }
+
+    /*Smallnav*/
+    .smallnav{
+        display: none;
+    }
+
+    /*Home Section*/
+    .remarks{
+        padding: 2rem 0;
+        grid-template-columns: 20% 20% 20%;
+        column-gap: 2.5rem;
+    }
+
+    /*Products Section*/
+    .imageprod{
+        grid-template-columns: 30% 30% 30%;
+        grid-gap: 2rem;
+    }
+
+    /*Special Section*/
+    .special{
+        background: var(--color3);
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .followus{
+        width: 100%;
+        position: relative;
+        padding: 0rem 0rem 0rem 1rem;
+    }
+
+
+        
+    /*Foooter Section*/
+    .footer{
+        grid-template-columns: 30% 30% 30%;
+        justify-content: center;
+        padding: 1rem 0 2rem 0;
+
+    }
+    .follow .footerhead {
+        text-align: center;
+        font-weight: bold;
+        padding: 1rem 0;
+    }
+
+
+}
