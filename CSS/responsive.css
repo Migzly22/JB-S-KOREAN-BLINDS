@@ -55,7 +55,7 @@
         transition: left 1s ease;
     }
     main{
-        margin-top: 5rem;
+        margin-top: 3.5rem;
     }
 
     .mainbodycover{
@@ -136,7 +136,7 @@
         display: none;
     }
     .mainbody{
-        margin-top: 5rem;
+        margin-top: 3.5rem;
     }
 
     /*Smallnav*/
