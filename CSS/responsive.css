@@ -257,3 +257,29 @@
     
 }
 
+
+/*Portfolio Page*/
+@media only screen and (max-width:600px){
+    .ptitle{
+        text-align: center;
+    }
+    
+    .portfoliobody{
+        padding: 1rem;
+    }
+    .pleft >div{
+        margin-bottom: 2rem;
+    }
+}
+@media only screen and (min-width:600px){
+    .pleft{
+        grid-template-columns: 40% 40%;
+    }
+    .portfoliobody{
+        padding: 1rem 4rem;
+    }
+    .pleft >div{
+        margin: 2rem;
+    }
+}
+

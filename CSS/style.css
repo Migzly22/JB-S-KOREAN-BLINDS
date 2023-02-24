@@ -453,3 +453,129 @@ textarea{
     background-color: var(--color3);
     color: var(--color2);
 }
+
+
+
+/*Portfolio*/
+
+.ptitle{
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.portfoliobody{
+    width: 100%;
+}
+.pleft{
+    display: grid;
+    justify-content: center;
+}
+.pleft >div{
+    height: 15rem;
+    text-align: center;
+    position: relative;
+    background: red;
+}
+.pleft > div a{
+    margin: 0;
+    padding: 0;
+}
+.pleft > div img{
+    width: 100%;
+    height: 100%;
+
+}
+.palign{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.palign a {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.portfoliocover{
+    display: none;
+    background: rgba(0, 0, 0, 0.493);
+    width: 100%;
+    height: 100%;
+    line-height: 13rem;
+    position:absolute;
+    top: 0;
+    color: white;
+
+}
+.portfoliocover i{
+    color: var(--color1);
+    font-size: 1.5rem;
+}
+
+
+.subtitle{
+    position: absolute;
+    bottom: 0;
+    background: #fff;
+    width: 100%;
+    padding: .5rem;
+}
+
+
+.palign:hover .portfoliocover{
+    display: block;
+}
+
+
+/*Carousel Portfolio*/
+.carouselportfolio{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.76);
+    width: 100%;
+    height: 100dvh;
+    position: fixed;
+    top: 0;
+}
+.swiper{
+    width: 80%;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    translate: -50% -50%
+
+}
+.swiper-slide img{
+    width: 100%;
+    height: 70dvh;
+}
+.swiper-button-prev,.swiper-button-next{
+    color: #000;
+    font-weight: bolder;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+}
+.buttons > div{
+    padding: .5rem;
+    margin: .5rem;
+    width: 5rem;
+
+    text-align: center;
+
+    z-index: 2;
+}
+.buttons > div i{
+    font-size: 2rem;
+    color: var(--color3);
+}
+
+.buttons > div:hover i{
+    color: var(--color1);
+}
